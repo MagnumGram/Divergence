@@ -1,0 +1,4 @@
+select *
+from dbo.Fraud2
+WHERE Coalesce(step, type, amount, nameOrig, oldbalanceOrg, newbalanceorig, balancedifference, nameDest, oldbalancedest, newbalancedest, isfraud, isflaggedfraud) IS NOT NULL
+	

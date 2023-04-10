@@ -1,4 +1,14 @@
 select *
 from dbo.Fraud2
-WHERE Coalesce(step, type, amount, nameOrig, oldbalanceOrg, newbalanceorig, balancedifference, nameDest, oldbalancedest, newbalancedest, isfraud, isflaggedfraud) IS NOT NULL
-	
+Where oldbalanceDest IS NOT NULL
+AND step Is not Null
+and type is not null
+and amount is not null
+and nameOrig is not null
+and oldbalanceOrg is not null
+and newbalanceOrig is not null
+and BalanceDifference is not null
+and nameDest is not null
+and newbalanceDest is not null
+and isFraud is not null
+and isFlaggedFraud is not null

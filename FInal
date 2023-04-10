@@ -1,0 +1,4 @@
+import pandas as pd
+df = pd.read_csv(r'C:\Users\jyou8\OneDrive\Desktop\capstone data\Fraud.csv')
+df1= df.dropna(how = 'any', axis = 0)
+wb.save(filename = 'Fraud.xlsx')
